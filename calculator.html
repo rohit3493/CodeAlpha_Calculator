@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="input"><input type="text" id="display"></div>
+
+        <div class="button_container">
+            <button  class="button" onclick="no='' ; document.querySelector('#display').value=no;">C</button>
+            <button  class="button" onclick="no=no+'+' ; document.querySelector('#display').value=no;" >+</button>
+
+            <button  class="button" onclick="no=no+'-' ; document.querySelector('#display').value=no;">-</button>
+
+            <button  class="button orange" onclick="no=no+'%' ; document.querySelector('#display').value=no;">%</button>
+
+
+            <button  class="button" onclick="no=no+'7' ; document.querySelector('#display').value=no;">7</button>
+            <button  class="button" onclick="no=no+'8' ; document.querySelector('#display').value=no;">8</button>
+
+            <button  class="button" onclick="no=no+'9' ; document.querySelector('#display').value=no;">9</button>
+            <button  class="button orange" onclick="no=no+'*'; document.querySelector('#display').value=no;">*</button>
+
+
+            <button  class="button" onclick="no=no+'4'; document.querySelector('#display').value=no;">4</button>
+            <button  class="button" onclick="no=no+'5'; document.querySelector('#display').value=no;">5</button>
+            <button  class="button" onclick="no=no+'6'; document.querySelector('#display').value=no;">6</button>
+
+            <button  class="button orange" onclick="no=no+'/'; document.querySelector('#display').value=no;">/</button>
+
+
+            <button  class="button" onclick="no=no+'1'; document.querySelector('#display').value=no;">1</button>
+            <button  class="button" onclick="no=no+'2'; document.querySelector('#display').value=no;">2</button>
+            <button  class="button" onclick="no=no+'3'; document.querySelector('#display').value=no;">3</button>
+            <button  class="button orange" onclick="no=no+'('; document.querySelector('#display').value=no;">(</button>
+
+            <button  class="button" onclick="no=no+'0'; document.querySelector('#display').value=no;">0</button>
+            <button  class="button" onclick="no=no+'.'; document.querySelector('#display').value=no;">.</button>
+            <button  class="button orange" onclick="no=eval(no); document.querySelector('#display').value=no;">=</button>
+            <button  class="button orange" onclick="no=no+'*'; document.querySelector('#display').value=no;">)</button>
+        </div>
+    </div>
+    <script>
+        let no='';
+        
+
+    </script>
+    
+</body>
+</html>
